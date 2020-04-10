@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: white;
+}
+
+/*header*/
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  background-color: white;
+  color: black;
+  padding: 32px 24px;
+}
+
+/*logo*/
+
+.logo {
+  font-family: Mukta;
+  font-weight: light;
+  font-size: 32px;
+  color: black;
+  opacity: 0.9;
+}
+
+.logo img {
+  vertical-align: middle;
+  height: 40px;
+}
+
+/*navbar*/
+
+header ul {
+  padding-right: 20px;
+}
+
+header li {
+  display: inline-block;
+  opacity: 0.9;
+  padding-left: 16px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+
+/*main*/
+
+/*banner*/
+
+.section-1 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(216, 216, 216);
+  color: rgb(71, 71, 71);
+}
+
+.text-section-1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: auto;
+  width: 27%;
+  padding-left: 24px;
+}
+
+.section-1 img {
+  padding: 32px 24px;
+}
+
+.text-section-1 h1 {
+  font-size: 60px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+}
+
+.text-section-1 p {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.text-section-1 a {
+  padding: 8px;
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(71, 71, 71);
+  text-align: center;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1.2px;
+  line-height: 2;
+}
+
+.text-section-1 a:hover {
+  background-color: black;
+  transition-delay: 50ms;
+  transition-duration: 400ms;
+}
+
+/*articles*/
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(71, 71, 71);
+}
+
+.practice {
+  width: 60%;
+  box-sizing: border-box;
+  border-right: 1px solid rgb(228, 228, 228);
+}
+
+.practice img {
+  padding: 32px 24px;
+}
+
+.practice h2 {
+  font-size: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  padding: 0 0 24px 24px;
+}
+
+.practice p {
+  padding: 0 24px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.practice .author {
+  padding: 32px 24px;
+  font-size: 16px;
+}
+
+/*news*/
+
+.news {
+  width: 40%;
+}
+
+.box {
+  display: flex;
+  padding: 16px;
+  border-top: 1px solid rgb(228, 228, 228);
+  border-bottom: 1px solid rgb(228, 228, 228);
+  margin-bottom: 1px;
+}
+
+.box:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+.box img {
+  width: 35%;
+  height: auto;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 65%;
+  padding-left: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.box-content p {
+  padding-top: 8px;
+  font-size: 18px;
+}
+
+.box-content a {
+  padding-top: 8px;
+  color: rgb(53, 134, 255);
+  text-decoration: none;
+}
