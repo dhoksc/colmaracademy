@@ -14,15 +14,16 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 16px 24px;
   height: 64px;
   background-color: white;
   color: black;
-  padding: 32px 24px;
 }
 
 /*logo*/
 
 .logo {
+  height: 32;
   font-family: Mukta;
   font-weight: light;
   font-size: 32px;
@@ -37,21 +38,17 @@ header {
 
 /*navbar*/
 
-header ul {
-  padding-right: 20px;
-}
-
 header li {
   display: inline-block;
-  opacity: 0.9;
   padding-left: 16px;
+  opacity: 0.9;
 }
 
 header a {
-  text-decoration: none;
-  color: black;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
+  color: black;
+  text-decoration: none;
 }
 
 /*main*/
@@ -65,41 +62,53 @@ header a {
   color: rgb(71, 71, 71);
 }
 
-.text-section-1 {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin: auto;
-  width: 27%;
-  padding-left: 24px;
-}
-
-.section-1 img {
+.leftside {
+  width: 60%;
+  box-sizing: border-box;
   padding: 32px 24px;
 }
 
+.students {
+  width: 100%;
+  height: auto;
+}
+
+.students img {
+  width: 100%;
+  height: auto;
+}
+
+.text-section-1 {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: left;
+  justify-content: center;
+  width: 30%;
+}
+
 .text-section-1 h1 {
-  font-size: 60px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 900;
+  font-weight: 800;
+  font-size: 56px;
 }
 
 .text-section-1 p {
-  font-size: 30px;
   font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
 }
 
 .text-section-1 a {
   padding: 8px;
   margin-top: 20px;
+  width: 85%;
+  text-align: center;
+  background-color: rgb(71, 71, 71);
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
   color: white;
   text-decoration: none;
-  background-color: rgb(71, 71, 71);
-  text-align: center;
-  font-size: 25px;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 1.2px;
-  line-height: 2;
 }
 
 .text-section-1 a:hover {
@@ -110,7 +119,7 @@ header a {
 
 /*articles*/
 
-.articles {
+.section-2 {
   display: flex;
   flex-wrap: wrap;
   color: rgb(71, 71, 71);
@@ -119,28 +128,32 @@ header a {
 .practice {
   width: 60%;
   box-sizing: border-box;
-  border-right: 1px solid rgb(228, 228, 228);
+  padding: 32px 24px;
 }
 
-.practice img {
-  padding: 32px 24px;
+.practice .banner {
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.banner img {
+  width: 100%;
 }
 
 .practice h2 {
-  font-size: 50px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 900;
-  padding: 0 0 24px 24px;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .practice p {
-  padding: 0 24px;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
+  padding-top: 24px;
 }
 
 .practice .author {
-  padding: 32px 24px;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
 
@@ -148,23 +161,28 @@ header a {
 
 .news {
   width: 40%;
+  box-sizing: border-box;
+  border-left: 1px rgb(228, 228, 228) solid;
 }
 
 .box {
   display: flex;
-  padding: 16px;
-  border-top: 1px solid rgb(228, 228, 228);
-  border-bottom: 1px solid rgb(228, 228, 228);
-  margin-bottom: 1px;
+  border-bottom: 1px rgb(228, 228, 228) solid;
+  box-sizing: border-box;
 }
 
 .box:hover {
   background-color: rgb(216, 216, 216);
 }
 
-.box img {
+.box .images {
   width: 35%;
   height: auto;
+  padding: 16px;
+}
+
+.images img {
+  width: 100%;
 }
 
 .box-content {
@@ -173,17 +191,128 @@ header a {
   justify-content: center;
   text-align: left;
   width: 65%;
-  padding-left: 18px;
   font-family: "Open Sans", sans-serif;
 }
 
+.box-content h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
 .box-content p {
-  padding-top: 8px;
   font-size: 18px;
+  padding: 8px 0;
 }
 
 .box-content a {
-  padding-top: 8px;
   color: rgb(53, 134, 255);
   text-decoration: none;
+}
+
+.box-content a:hover {
+  color: rgb(8, 107, 255);
+}
+
+/*classes*/
+
+.section-3 {
+  background-color: rgb(216, 216, 216);
+  color: rgb(71, 71, 71);
+}
+
+.section-3 h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 32px;
+}
+
+/*class-boxes*/
+
+.classes-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px 72px;
+}
+
+.classes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 500px;
+  height: 500px;
+  margin: 32px;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.classes img {
+  height: auto;
+  width: 100%;
+}
+
+.classes-text {
+  padding: 16px 16px 24px 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.classes-text h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  padding-bottom: 16px;
+  color: rgb(71, 71, 71);
+}
+
+.classes-text .courses {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  padding-top: 8px;
+  line-height: 1.8;
+}
+
+.classes-text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+/*section-4*/
+
+.section-4 h2 {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(71, 71, 71);
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 32px;
+}
+
+/*video side*/
+
+.section-4 .reimagine {
+  width: 60%;
+  box-sizing: border-box;
+  padding: 32px 24px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.reimagine h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: rgb(71, 71, 71);
+  padding-top: 24px;
+}
+
+.reimagine p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  padding-top: 8px;
 }
