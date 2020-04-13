@@ -14,8 +14,8 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
-  height: 64px;
+  padding: 1em 1.5em;
+  height: 4em;
   background-color: white;
   color: black;
 }
@@ -23,30 +23,41 @@ header {
 /*logo*/
 
 .logo {
-  height: 32;
   font-family: Mukta;
   font-weight: light;
-  font-size: 32px;
+  font-size: 2em;
   color: black;
   opacity: 0.9;
 }
 
 .logo img {
   vertical-align: middle;
-  height: 40px;
+  height: 1.5em;
+}
+
+.svg1,
+.svg2,
+.svg3 {
+  vertical-align: middle;
+  height: 1.5em;
+}
+
+.svg0 {
+  vertical-align: middle;
+  height: 2.4em;
 }
 
 /*navbar*/
 
 header li {
   display: inline-block;
-  padding-left: 16px;
+  padding-left: 1em;
   opacity: 0.9;
 }
 
 header a {
   font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
   color: black;
   text-decoration: none;
 }
@@ -65,7 +76,7 @@ header a {
 .leftside {
   width: 60%;
   box-sizing: border-box;
-  padding: 32px 24px;
+  padding: 2em 1.5em;
 }
 
 .students {
@@ -90,23 +101,23 @@ header a {
 .text-section-1 h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  font-size: 56px;
+  font-size: 3.5em;
 }
 
 .text-section-1 p {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 2.25em;
 }
 
 .text-section-1 a {
-  padding: 8px;
-  margin-top: 20px;
+  padding: 0.5em;
+  margin-top: 1.25em;
   width: 85%;
   text-align: center;
   background-color: rgb(71, 71, 71);
   font-family: "Open Sans", sans-serif;
-  font-size: 26px;
+  font-size: 1.625em;
   color: white;
   text-decoration: none;
 }
@@ -128,12 +139,12 @@ header a {
 .practice {
   width: 60%;
   box-sizing: border-box;
-  padding: 32px 24px;
+  padding: 2em 1.5em;
 }
 
 .practice .banner {
   width: 100%;
-  padding-bottom: 32px;
+  padding-bottom: 2em;
 }
 
 .banner img {
@@ -142,19 +153,19 @@ header a {
 
 .practice h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: 700;
 }
 
 .practice p {
   font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  padding-top: 24px;
+  font-size: 1.25em;
+  padding-top: 1.5em;
 }
 
 .practice .author {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 /*news*/
@@ -178,7 +189,7 @@ header a {
 .box .images {
   width: 35%;
   height: auto;
-  padding: 16px;
+  padding: 1em;
 }
 
 .images img {
@@ -197,13 +208,13 @@ header a {
 .box-content h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.75em;
   color: rgb(71, 71, 71);
 }
 
 .box-content p {
-  font-size: 18px;
-  padding: 8px 0;
+  font-size: 1.125em;
+  padding: 0.5em 0;
 }
 
 .box-content a {
@@ -224,18 +235,21 @@ header a {
 
 .section-3 h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: 700;
   text-align: center;
-  padding-top: 32px;
+  padding-top: 2em;
 }
 
 /*class-boxes*/
+/*spec dimensions for this part are not possible. cannot have margins and 
+padding given, and keep the content centered*/
 
 .classes-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 32px 72px;
+  justify-content: space-around;
+  align-content: center;
 }
 
 .classes {
@@ -243,9 +257,9 @@ header a {
   flex-wrap: wrap;
   flex-direction: column;
   box-sizing: border-box;
-  width: 500px;
-  height: 500px;
-  margin: 32px;
+  margin: 2em;
+  width: 31.25em;
+  height: 31.25em;
   background-color: white;
   font-family: "Open Sans", sans-serif;
 }
@@ -256,28 +270,28 @@ header a {
 }
 
 .classes-text {
-  padding: 16px 16px 24px 16px;
+  padding: 1em 1em 1.5em 1em;
   font-family: "Open Sans", sans-serif;
 }
 
 .classes-text h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 28px;
-  padding-bottom: 16px;
+  font-size: 1.75em;
+  padding-bottom: 1em;
   color: rgb(71, 71, 71);
 }
 
 .classes-text .courses {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  padding-top: 8px;
+  font-size: 1.125em;
+  padding-top: 0.5em;
   line-height: 1.8;
 }
 
 .classes-text p {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 /*section-4*/
@@ -285,10 +299,10 @@ header a {
 .section-4 h2 {
   font-family: "Open Sans", sans-serif;
   color: rgb(71, 71, 71);
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: 700;
   text-align: center;
-  padding-top: 32px;
+  padding-top: 2em;
 }
 
 /*video side*/
@@ -301,7 +315,7 @@ header a {
 .exhibit-flex .reimagine-urban {
   width: 60%;
   box-sizing: border-box;
-  padding: 32px 24px;
+  padding: 2.5em 2em;
 }
 
 video {
@@ -312,15 +326,15 @@ video {
 .reimagine-urban h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.75em;
   color: rgb(71, 71, 71);
-  padding-top: 24px;
+  padding-top: 1.5em;
 }
 
 .reimagine-urban p {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  padding-top: 8px;
+  font-size: 1.125em;
+  padding-top: 0.5em;
 }
 
 /*(news, box, images, box-content) rules are set in section-2*/
@@ -332,24 +346,66 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
-  height: 64px;
+  padding: 1em 1.5em;
+  height: 4em;
   background-color: white;
   color: black;
   border-top: 1px rgb(228, 228, 228) solid;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 footer li {
   display: inline-block;
-  padding-left: 16px;
+  padding-left: 1em;
   opacity: 0.9;
 }
 
 footer a {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
   color: black;
   text-decoration: none;
+}
+
+/*media*/
+
+@media only screen and (min-width: 880px) {
+  .mobile-images {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 879px) and (min-width: 560px) {
+  header li {
+    display: none;
+  }
+
+  .svg0 {
+    display: none;
+  }
+
+  .mobile-images {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 559px) {
+  header .logo {
+    display: none;
+  }
+
+  header li {
+    display: none;
+  }
+
+  .mobile-images {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
