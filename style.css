@@ -113,6 +113,7 @@ header a {
 .text-section-1 a {
   padding: 0.5em;
   margin-top: 1.25em;
+  margin-bottom: 1.25em;
   width: 85%;
   text-align: center;
   background-color: rgb(71, 71, 71);
@@ -374,9 +375,15 @@ footer a {
   .mobile-images {
     display: none;
   }
+
+  .images .mobile {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 879px) and (min-width: 560px) {
+  /*header*/
+
   header li {
     display: none;
   }
@@ -391,9 +398,92 @@ footer a {
     width: 35%;
     flex-wrap: wrap;
   }
+
+  /*section-1*/
+
+  .leftside {
+    width: 100%;
+  }
+
+  .text-section-1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-section-1 a {
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  /*section-2*/
+
+  .practice {
+    display: none;
+  }
+
+  .news {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 1em 1em 2em 1em;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-bottom: 1px rgb(228, 228, 228) solid;
+    box-sizing: border-box;
+  }
+
+  .images {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: auto;
+    padding-top: 0.5em;
+  }
+
+  .images .PC {
+    display: none;
+  }
+
+  .box-content {
+    padding-left: 1em;
+    width: 100%;
+    padding-bottom: 1em;
+  }
+
+  /*section-4*/
+
+  .section-4 h2 {
+    padding-top: 0.8em;
+    padding-bottom: 0.4em;
+  }
+
+  .section-4 .news,
+  .section-4 h3,
+  .section-4 p {
+    display: none;
+  }
+
+  .exhibit-flex .reimagine-urban {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  /*footer*/
+
+  .navbar-footer {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 559px) {
+  /*header*/
+
   header .logo {
     display: none;
   }
@@ -407,5 +497,136 @@ footer a {
     justify-content: space-around;
     width: 100%;
     flex-wrap: wrap;
+  }
+
+  /*section-1*/
+
+  .leftside {
+    width: 100%;
+  }
+
+  .text-section-1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-section-1 a {
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  /*section-2*/
+
+  .practice {
+    display: none;
+  }
+
+  .news {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 1em 1em 2em 1em;
+    border-bottom: 1px rgb(228, 228, 228) solid;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  .images {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .images .PC {
+    display: none;
+  }
+
+  .box-content {
+    padding-left: 1em;
+    width: 100%;
+    padding-bottom: 1em;
+  }
+
+  /*section-3*/
+
+  .section-3 {
+    background-color: white;
+    border-bottom: 1px rgb(228, 228, 228) solid;
+    padding-bottom: 2em;
+  }
+
+  .section-3 h2 {
+    padding-top: 0.8em;
+    padding-bottom: 0.4em;
+  }
+
+  /*classes boxes*/
+
+  .classes {
+    background-color: rgb(216, 216, 216);
+    height: auto;
+    margin: 0.5em 1em;
+    justify-content: center;
+  }
+
+  .classes:hover {
+    background-color: rgb(182, 182, 182);
+  }
+
+  .classes img {
+    display: none;
+  }
+
+  .classes-text p {
+    display: none;
+  }
+
+  .classes h3 {
+    margin: 0;
+    padding: 0.5em;
+  }
+
+  /*section-4*/
+
+  .section-4 h2 {
+    padding-top: 0.8em;
+    padding-bottom: 0.4em;
+  }
+
+  .section-4 .news,
+  .section-4 h3,
+  .section-4 p {
+    display: none;
+  }
+
+  .exhibit-flex .reimagine-urban {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  /*footer*/
+
+  footer {
+    display: block;
+    align-items: center;
+    margin-top: 1.5em;
+    padding: 1em;
+    height: auto;
+    background-color: white;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    border: none;
+  }
+
+  .navbar-footer {
+    display: none;
   }
 }
